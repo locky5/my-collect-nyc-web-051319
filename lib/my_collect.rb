@@ -1,9 +1,9 @@
 def my_collect(array)
-  i = 0
-  collection = [] ##original collection
-  while i < array.length
+  i = 0 
+  collection = [] ##original array 
+  while i < array.length 
     collection << yield(array[i])
-    i += 1
+    i += 1 
   end
-  collection ##returns new collection
-end 
+  collection ##new array
+end
